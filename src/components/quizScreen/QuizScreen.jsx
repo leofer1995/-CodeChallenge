@@ -7,7 +7,7 @@ import { next, correct } from "../../actions";
 import styles from './QuizScreen.module.css'
 
 const QuizScreen = ({correct, next}) => {
-    const {loading, data} = useFetch('https://opentdb.com/api.php?amount=10&difficulty=hard&type=boolean');
+    const {loading, data} = useFetch('https://opentdb.com/api.php?amount=11&difficulty=hard&type=boolean');
     const [answer, setAnswer] = useState(0);
 
     const {

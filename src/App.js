@@ -13,14 +13,14 @@ const App = ({correct, responses}) => {
             </Route>
 
             <Route exact path = '/Quiz'>
-                {responses.length !== 10 ?
+                {responses.length !== 11 ?
                     <QuizScreen />:
                     <Redirect to='/Result'/>
                 }
             </Route>
 
             <Route exact path = '/Result'>
-                {responses.length === 10?
+                {responses.length === 11?
                     <ResultScreen responses={responses} correct={correct}/>:
                     <Redirect to='/'/>
                 }
