@@ -21,7 +21,7 @@ const ResultScreen = ({responses, correct, reset}) => {
             <hr />
 
             <div className={styles.card}>
-                <img src={correct===10?perfect:correct>=7?good:loser} alt='quiz'/>                           
+                <img src={correct===responses.length?perfect:correct>=7?good:loser} alt='quiz'/>                           
             </div>
             
             <div className={styles.responses}>

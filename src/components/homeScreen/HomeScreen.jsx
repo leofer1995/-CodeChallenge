@@ -11,7 +11,7 @@ export const HomeScreen = () => {
 
             <div className={styles.card}>
                 <img src={quizImg} alt='quiz'/>               
-                <p>You will be presented with 10 True or False questions.</p>               
+                <p>You will be presented with 11 True or False questions.</p>               
             </div>
 
             <Link to='/Quiz'>
