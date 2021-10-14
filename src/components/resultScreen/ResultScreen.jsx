@@ -26,7 +26,7 @@ const ResultScreen = ({responses, correct, reset}) => {
             
             <div className={styles.responses}>
                 {responses.map(({correct_answer,response,question}) => 
-                    <div className={correct_answer === response ? styles.true : styles.false}>
+                    <div key ={question} className={correct_answer === response ? styles.true : styles.false}>
                         <p>{he.decode(question)}</p>
                     </div>
                 )} 
