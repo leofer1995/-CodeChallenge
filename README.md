@@ -1,6 +1,6 @@
 # Quiz App
 
-puedes probar la aplicacion deployada en: https://codechallenge-chi.vercel.app/
+puedes probar la aplicación deployada en: https://codechallenge-chi.vercel.app/
 
 ## indicaciones para ejecución 
 
