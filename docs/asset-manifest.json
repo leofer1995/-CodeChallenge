@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.342517cf.chunk.css",
+    "main.js": "/static/js/main.251a66c8.chunk.js",
+    "main.js.map": "/static/js/main.251a66c8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1b294dd0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1b294dd0.js.map",
+    "static/js/2.f865399c.chunk.js": "/static/js/2.f865399c.chunk.js",
+    "static/js/2.f865399c.chunk.js.map": "/static/js/2.f865399c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.342517cf.chunk.css.map": "/static/css/main.342517cf.chunk.css.map",
+    "static/js/2.f865399c.chunk.js.LICENSE.txt": "/static/js/2.f865399c.chunk.js.LICENSE.txt",
+    "static/media/good.da7f4db7.svg": "/static/media/good.da7f4db7.svg",
+    "static/media/loser.5cd583df.svg": "/static/media/loser.5cd583df.svg",
+    "static/media/perfect.c810612d.svg": "/static/media/perfect.c810612d.svg",
+    "static/media/quizImg.59c032de.svg": "/static/media/quizImg.59c032de.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1b294dd0.js",
+    "static/js/2.f865399c.chunk.js",
+    "static/css/main.342517cf.chunk.css",
+    "static/js/main.251a66c8.chunk.js"
+  ]
+}
