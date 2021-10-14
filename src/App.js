@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
+import { HomeScreen } from './components/homeScreen/HomeScreen.jsx';
+import QuizScreen from './components/quizScreen/QuizScreen';
+import ResultScreen  from './components/resultScreen/ResultScreen';
+import { connect } from 'react-redux';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = ({correct, responses}) => {
+    return(
+        <Router>
+            <Route exact path = '/'>
+                <HomeScreen />
+            </Route>
 
-export default App;
+            <Route exact path = '/Quiz'>
+                {responses.length !== 10 ?
+                    <QuizScreen />:
+                    <Redirect to='/Result'/>
+                }
+            </Route>
+
+            <Route exact path = '/Result'>
+                {responses.length === 10?
+                    <ResultScreen responses={responses} correct={correct}/>:
+                    <Redirect to='/'/>
+                }
+            </Route>
+
+        </Router>
+    );
+}
+function mapStateToProps(state){
+    return {
+        correct:state.correct,
+        responses:state.responses,
+    }
+}
+export default connect(mapStateToProps)(App)
